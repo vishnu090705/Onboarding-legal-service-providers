@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet access for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Legislature"
+        tools:targetApi="31">
+
+        <!-- ✅ Launch LoginActivity FIRST -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- User/Provider Dashboards -->
+        <activity android:name=".activities.MainActivityWithNav" />
+        <activity android:name=".activities.ProviderMainActivity" />
+
+        <!-- Other Activities -->
+        <activity android:name=".activities.SignupActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.ClientBookingsActivity" />
+        <activity android:name=".activities.BookAppointmentActivity" />
+        <activity android:name=".activities.AppointmentDetailsActivity" />
+
+
+    </application>
+</manifest>

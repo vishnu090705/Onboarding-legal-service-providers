@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59152127261",
+    "project_id": "legalservicesapp",
+    "storage_bucket": "legalservicesapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59152127261:android:92d8d6ca0edaf8829abdf4",
+        "android_client_info": {
+          "package_name": "com.example.legislature"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWy6rMUtyOFnHGrp1gVRjkq2FT1Bq3EBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
